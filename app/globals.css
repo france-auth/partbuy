@@ -5,8 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-family: --font-montserrat;
+  font-family: --font-stretch-pro;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -14,8 +16,33 @@
   }
 }
 
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+} */
+
+h1, h2 {
+  font-family: var(--font-stretch-pro);
+}
+p, span {
+  font-family: var(--font-montserrat);
+}
+/* 
+.icon {
+  color: #eeeeee; 
+  transition: color 0.3s ease; 
+}
+
+.icon:hover {
+  color: #131313;
+} */
+
+@layer utilities {
+  .dotted {
+    @apply rounded-full border-[0.5px] border-dashed border-[#00FAEB] py-1 px-3 max-w-max
+  }
+  .dotted-text {
+    @apply text-[8px] leading-[9.75px] text-[#00FAEB] max-w-max uppercase
+  }
 }
