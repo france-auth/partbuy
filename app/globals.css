@@ -25,7 +25,7 @@ body {
 h1, h2 {
   font-family: var(--font-stretch-pro);
 }
-p, span {
+p, span, li {
   font-family: var(--font-montserrat);
 }
 /* 
@@ -44,5 +44,23 @@ p, span {
   }
   .dotted-text {
     @apply text-[8px] leading-[9.75px] text-[#00FAEB] max-w-max uppercase
+  }
+  .svgstyle {
+    @apply sm:max-w-max flex gap-2 justify-center items-center px-3 py-2 sm:px-20 lg:px-10 md:py-3 hover:bg-[#00FAEB] text-[#eeeeee] hover:text-[#131313]
+  }
+  .svgstylee {
+    @apply sm:max-w-max justify-center items-center px-3 py-2 md:py-3 md:px-4 hover:bg-[#00FAEB] text-[#eeeeee] hover:text-[#131313] 
+  }
+  .svgtext {
+    @apply hidden lg:flex md:text-xs text-center
+  }
+  .socialsvg {
+    @apply px-4 py-3 hover:bg-[#00FAEB] text-[#eeeeee] hover:text-[#131313] hover:fill-[#131313]
+  }
+  .hero-content {
+    @apply h-[70%] xr:h-[80%] flex flex-col justify-center items-center mx-auto xs:max-w-[440px] sm:max-w-[550px] md:max-w-[750px] lg:max-w-[850px] xl:max-w-[1000px] p-5 space-y-3 text-center
+  }
+  .hero-main {
+    @apply h-screen bg-[url(/hero.png)] sm:bg-[url(/hero-desktop.png)] bg-cover bg-center bg-no-repeat lg:bg-cover -z-50 w-screen
   }
 }
