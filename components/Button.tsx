@@ -28,8 +28,8 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const buttonContent = (
     <div className={`flex w-full justify-center items-center space-x-2 ${className}`}>
-      <span className='flex place-self-center'>{name}</span>
-      {src && <Image src={src} alt={alt} width={width} height={height} quality={quality} className='flex place-self-center' />}
+      <p className='flex items-center place-self-center mt-[1px]'>{name}</p>
+      {src && <Image src={src} alt={alt} width={width} height={height} quality={quality} className='flex items-center' />}
     </div>
   );
 

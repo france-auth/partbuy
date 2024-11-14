@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #1C1C1C;
   font-family: --font-montserrat;
   font-family: --font-stretch-pro;
 }
@@ -25,18 +25,10 @@ body {
 h1, h2 {
   font-family: var(--font-stretch-pro);
 }
+
 p, span, li {
   font-family: var(--font-montserrat);
 }
-/* 
-.icon {
-  color: #eeeeee; 
-  transition: color 0.3s ease; 
-}
-
-.icon:hover {
-  color: #131313;
-} */
 
 @layer utilities {
   .dotted {
